@@ -732,7 +732,7 @@ body,
   .thumb-div,
   .clicked-thumb-div,
   .my-carousel {
-    border-radius: 15px;
+    border-radius: 10px;
   }
   .secondary-dp {
     display: flex;
