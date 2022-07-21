@@ -670,13 +670,13 @@ body,
     width: 80%;
     margin-inline: auto;
     border-bottom: 1px solid rgba(60, 60, 60, 0.313);
-    height: 80px;
+    height: 110px;
   }
   .nav__ul {
     height: 100%;
   }
   .nav {
-    margin-bottom: 1.5em;
+    padding: 0;
   }
   .cart {
     left: 78%;
@@ -689,12 +689,12 @@ body,
   }
   .main {
     text-align: center;
-    grid-template-rows: 27rem;
+    grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
     width: 75%;
     gap: 8vw;
     align-items: center;
-    padding-bottom: 0;
+    padding: 4em;
     margin-inline: auto;
   }
 
@@ -702,7 +702,7 @@ body,
     grid-row: 1;
     display: grid;
     overflow: initial;
-    grid-template-rows: 340px 60px;
+    grid-template-rows: 400px 60px;
     gap: 1.2em;
   }
   .thumb-div,
@@ -826,8 +826,10 @@ body,
     display: grid;
     grid-template-columns: 1fr 2fr;
     column-gap: 2em;
+    row-gap: 0.8em;
     padding: 0;
     max-width: 358px;
+    margin-top: 4em;
   }
   .titles,
   .item-desc,
@@ -864,7 +866,7 @@ body,
 @media screen and (min-width: 1000px) {
   .main {
     align-items: start;
-    grid-template-columns: 1.2fr 2fr;
+    grid-template-columns: 1.7fr 2fr;
     width: 72%;
   }
 
@@ -872,18 +874,11 @@ body,
     overflow: initial;
     gap: 0.5vw;
   }
-
-  .about-shoe {
-    margin-top: 2em;
-  }
   .logo {
     width: 8rem;
   }
-  .nav {
-    padding-top: 10px;
-    margin-bottom: 2.5em;
-  }
-  .thumbnail {
-    height: 100%;
+
+  .dp-section {
+    grid-template-rows: 400px 70px;
   }
 }
