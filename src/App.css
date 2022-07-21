@@ -749,8 +749,19 @@ body,
   .my-carousel {
     cursor: pointer;
   }
-  .clicked-thumb-div img {
-    opacity: 0.4;
+  .clicked-thumb-div {
+    /* opacity: 0.4; */
+    position: relative;
+  }
+  .clicked-thumb-div::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.628);
+    background-blend-mode: lighten;
   }
 
   .clicked-thumb-div {
@@ -798,10 +809,11 @@ body,
     background-color: rgb(101, 29, 29);
   } */
 
-  .thumbnail:hover {
+  .thumb-div:hover {
     opacity: 0.7;
   }
 
+  /* remove this class later */
   .thumbnail {
     background: none;
   }
