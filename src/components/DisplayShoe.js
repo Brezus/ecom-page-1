@@ -76,7 +76,7 @@ export default function DisplayShoe() {
 
   return (
     <>
-      <section className="dp-section">
+      <div className="dp-section">
         {/* this carousel dissapears using media query  */}
         <CarouselProvider
           className="main-dp pure-carousel"
@@ -108,7 +108,7 @@ export default function DisplayShoe() {
             smallImages={smallImages}
           ></Lightbox>
         )}
-      </section>
+      </div>
     </>
   )
 }

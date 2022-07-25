@@ -60,19 +60,18 @@ export default function Nav({ cartInfo }) {
     setOpenMenu(false)
   }
 
-  function handleResize() {
-    if (window.innerWidth > 830) {
-      setOpenMenu(false)
-    }
-  }
-
   useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth > 830) {
+        setOpenMenu(false)
+      }
+    }
     window.addEventListener("resize", handleResize)
     return () => window.removeEventListener("resize", handleResize)
   }, [])
 
   return (
-    <nav className="nav" role={"navigation"}>
+    <nav className="nav">
       <div className="nav-cont">
         <img
           style={{ position: `${openMenu ? "fixed" : "absolute"}` }}

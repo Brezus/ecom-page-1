@@ -142,11 +142,11 @@ body,
   text-align: left;
   transition: transform 0.2s ease;
 }
-.titles h4,
+.titles h2,
 .quantity-cont button {
   color: var(--Orange);
 }
-.titles h4 {
+.titles h2 {
   opacity: 0.7;
 }
 .quantity-cont button {
@@ -558,7 +558,7 @@ body,
   .titles h1 {
     font-size: 2rem;
   }
-  .titles h4 {
+  .titles h2 {
     font-size: 1.2rem;
   }
   .item-desc {
@@ -599,7 +599,7 @@ body,
 }
 @media screen and (min-width: 830px) {
   /* typography */
-  .titles h4 {
+  .titles h2 {
     font-size: 0.7rem;
     letter-spacing: 0.6px;
     text-transform: uppercase;

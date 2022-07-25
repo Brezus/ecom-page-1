@@ -22,10 +22,10 @@ export default function AboutShoe({ logic }) {
   })
 
   return (
-    <section className="about-shoe">
+    <div className="about-shoe">
       <div className="titles">
         <h1>Fall Limited Edition Sneakers</h1>
-        <h4>Sneaker Company</h4>
+        <h2>Sneaker Company</h2>
       </div>
       <p className="item-desc">
         These low-profile sneakers are your perfect casual wear companion.
@@ -46,6 +46,6 @@ export default function AboutShoe({ logic }) {
         {cartIcon}
         Add to cart
       </button>
-    </section>
+    </div>
   )
 }
